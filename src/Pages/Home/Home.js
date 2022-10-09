@@ -6,18 +6,18 @@ import SideBar from "../../Components/SideBar/SideBar";
 const Home = () => {
   return (
   <>
-    <div class="pt-16 flex h-screen">
+    <div class="md:pt-16 flex h-fit">
       <SideBar/>
-      <div class="ml-24">
-        <div class="flex">
-          <div class="w-[350px] mr-[20px]">
+      <div class="md:ml-24">
+        <div class="flex flex-col md:flex-row ml-7 md:ml-0">
+          <div class="w-[275px] md:w-[350px] md:mr-[20px]">
             <CountCardMaker/>
           </div>
-          <div class="w-[350px]">
+          <div class="w-[275px] md:w-[350px]">
             <CountCardModel/>
           </div>
         </div>
-        <div class="w-[720px] h-[1000px] mt-18">
+        <div class="w-[275px] md:w-[720px] mt-18 ml-7 md:ml-0">
           <CardBarChart/>
         </div>
       </div>

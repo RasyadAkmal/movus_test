@@ -24,15 +24,9 @@ class CountCardModel extends Component {
     }
 
     render() {
-      const {items} = this.state;
       const {count} = this.state;
         return (
           <div class="mt-10">
-            {
-              items.length > 0 ? items.map(item => {
-              const {model} = item;
-              }) : null
-            }
             <div class="flex flex-col bg-white px-6 py-4 rounded-md drop-shadow-md">
                 <div class="text-left flex flex-col justify-items-start">
                     <a class="text-[14px] whitespace text-gray-600">Total Models</a>
